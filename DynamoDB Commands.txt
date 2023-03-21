@@ -1,0 +1,29 @@
+Simply configure the AWS CLI using the following command:
+
+aws configure
+
+Running the above command will prompt the user to enter the AWS credentials which are “Access” and “Secret” keys with region and format
+
+
+command to describe the DynamoDB table:
+aws dynamodb describe-table --table-name <Table_Name>
+
+
+Use the following command to describe the “Endpoints” of the DynamoDB table:
+aws dynamodb describe-endpoints
+
+
+aws dynamodb put-item \
+    --table-name Employee  \
+    --item \
+        '{"EmployeeId": {"S": "Nithya K"}}'
+
+aws dynamodb put-item \
+    --table-name Employee  \
+    --item \
+        '{"EmployeeId": {"S": "Neue Fische"}}'
+
+aws dynamodb put-item \
+    --table-name Employee  \
+    --item \
+        '{"EmployeeId": {"S": "Munich"}}'
